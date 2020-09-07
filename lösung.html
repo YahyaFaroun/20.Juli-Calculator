@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculator">
+        <div id="result"></div>
+        <div class="tasten">
+            <button onclick="addChar(0)">0</button>
+            <button onclick="addChar(1)">1</button>
+            <button onclick="addChar(2)">2</button>
+            <button onclick="addChar(3)">3</button>
+            <button onclick="addChar(4)">4</button>
+            <button onclick="addChar('.')">,</button>
+            <button onclick="addChar('+')">+</button>
+            <button onclick="addChar('-')">-</button>
+            <button onclick="calcMe()">Enter</button>
+            <button onclick="resetMe()">reset</button>
+        </div>
+    </div>
+
+    <script>
+const result = document.getElementById('result')
+
+function addChar(para) {
+    console.log("Working", para)
+    result.innerHTML += para
+}
+function resetMe() {
+    result.innerHTML = ""
+}
+function calcMe() {
+    result.innerHTML = eval(result.innerHTML)
+}
+
+    </script>
+</body>
+</html>

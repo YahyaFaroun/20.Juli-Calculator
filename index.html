@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        section{
+            width: 30%;
+            margin: 30vh auto;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.4em;
+        }
+        h1{
+            height: 5vh;
+            background-color: #000;   
+            margin: 0;
+            color: #fff;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.4em;
+            text-align: right;
+        }
+        div{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;    
+            height: 35px;  
+            
+        }
+        div:nth-of-type(1) input{
+            background-color: orange;
+            color: white;
+        }
+        div:nth-of-type(4) input:last-of-type{
+            background-color: green;
+        }
+        div:last-of-type input{
+            background-color: red;
+        }
+        div input{
+            border: .1px solid black;
+            font-family: 'Orbitron', sans-serif;
+            font-size: .8em;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1 id="eingabe"></h1>
+        <div>
+            <input type="button" value="*" onclick="enter('\*')">
+            <input type="button" value="/" onclick="enter('\/')">
+            <input type="button" value="-" onclick="enter('\-')">
+            <input type="button" value="+" onclick="enter('\+')">
+        </div>
+        <div>
+            <input type="button" value="." onclick="enter('\.')">
+            <input type="button" value="9" onclick="enter(9)">
+            <input type="button" value="8" onclick="enter(8)">
+            <input type="button" value="7" onclick="enter(7)">
+        </div>
+        <div>
+            <input type="button" value="6" onclick="enter(6)">
+            <input type="button" value="5" onclick="enter(5)">
+            <input type="button" value="4" onclick="enter(4)">
+            <input type="button" value="3" onclick="enter(3)">
+        </div>
+        <div>
+            <input type="button" value="2" onclick="enter(2)">
+            <input type="button" value="1" onclick="enter(1)">
+            <input type="button" value="0" onclick="enter(0)">
+            <input type="button" value="=" onclick="equal()">
+        </div>
+        <div>
+            <input type="button" value="C" onclick="cDelete()">
+        </div>
+    </section>
+
+    <script>
+        let a;
+        let result;
+
+        function equal (){
+
+        }
+
+        function multiple(){
+            console.log("test");
+            document.getElementById("eingabe").innerHTML = document.getElementById("eingabe").value;    
+        }
+        function divide(){
+            console.log("test");
+            result /= result;
+        }
+        function minus(){
+            console.log("test");
+            result -= result;
+        }
+        function plus(){
+            console.log("test");
+            result -= result;
+        }
+        function dot(){
+            console.log("test");
+            
+        }
+        function nine(){
+            console.log("test");
+            let a = 9;
+        }
+        function eight(){
+            console.log("test");
+            let b = 8;
+        }
+        function seven(){
+            console.log("test");
+            let c = 7;
+        }
+        function six(){
+            console.log("test");
+        }
+        function five(){
+            console.log("test");
+        }
+        function four(){
+            console.log("test");
+        }
+        function three(){
+            console.log("test");
+        }
+        function two(){
+            console.log("test");
+        }
+        function one(){
+            console.log("test");
+        }
+        function zero(){
+            console.log("test");
+        }
+        function equal(){
+            console.log("test");
+        }
+        function cDelete(){
+            console.log("test");
+        }
+    </script>
+</body>
+</html>
